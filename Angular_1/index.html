@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="controller/firstCtrl.js"></script>
+</head>
+<body>
+   <div class="firstCtrl" ng-controller="firstCtrl">
+       {{hello}}
+       
+       <form action="#">
+           <input type="text" ng-model="tempVal">
+           <button ng-click="addNew()">Click</button>
+       </form>
+       <p ng-repeat="task in tempArra">{{task}}<button ng-click="deleteItem()">x</button></p>
+   </div>
+    
+</body>
+</html>
